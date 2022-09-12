@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Simples</title>
+    <link rel="stylesheet" href="/Formulario/assets/css/style.css" media="screen">
+</head>
+
+<body>
+
+    <div class="campo">
+        <h1 class="titulo">Cadastro de DEVs</h1>
+        <p class="subtitulo">Complete suas informações</p>
+        <br>
+    </div>
+
+    <form>
+
+        <fieldset class="grupo">
+
+            <div class="campo">
+                <label for="nome"><strong>Nome</strong></label>
+                <input type="text" name="nome" id="nome" required>
+            </div>
+
+            <div class="campo">
+                <label for="sobrenome"><strong>Sobrenome</strong></label>
+                <input type="text" name="sobrenome" id="sobrenome" required>
+            </div>
+        </fieldset>
+
+        <div class="campo">
+            <label for="email"><strong>E-mail</strong></label>
+            <input type="email" name="email" id="email" required>
+        </div>
+
+        <div class="campo">
+            <label for=""><strong>Tipo de Desenvolvedor?</strong></label>
+            <label for="">
+                <input type="radio" name="devweb" id="frontend" value="frontend" checked>Front-end
+            </label>
+            <label for="">
+                <input type="radio" name="devweb" id="backend" value="backend">Back-end
+            </label>
+            <label for="">
+                <input type="radio" name="devweb" id="fullstack" value="fullstack">Full Stack
+            </label>
+        </div>
+
+        <div class="campo">
+            <label for="senioridade"><strong>Senioridade</strong></label>
+            <select name="senioridade" id="senioridade" required>
+                <option value="" selected disabled>Selecione</option>
+                <option value="estagiario">Estagiário</option>
+                <option value="junior">Junior</option>
+                <option value="pleno">Pleno</option>
+                <option value="senior">Sênior</option>
+            </select>
+        </div>
+
+        <fieldset class="grupo">
+            <div class="check">
+                <label for="tecnologias"><strong>Tecnologias</strong></label><br><br>
+
+                <input type="checkbox" name="HTML" id="tecnologias" value="HTML">
+                <label for="HTML">HTML</label>
+
+                <input type="checkbox" name="CSS" id="tecnologias" value="CSS">
+                <label for="CSS">CSS</label>
+
+                <input type="checkbox" name="JAVASCRIPT" id="tecnologias" value="JAVASCRIPT">
+                <label for="JAVASCRIPT">JAVASCRIPT</label>
+
+                <input type="checkbox" name="BOOTSTRAP" id="tecnologias" value="BOOTSTRAP">
+                <label for="BOOTSTRAP">BOOTSTRAP</label>
+
+                <input type="checkbox" name="SASS" id="tecnologias" value="SASS">
+                <label for="SASS">SASS</label>
+
+                <!-- <br><br>
+
+                <input type="checkbox" name="REACTJS" id="tecnologias" value="REACTJS">
+                <label for="REACTJS">REACTJS</label>
+
+                <input type="checkbox" name="NODEJS" id="tecnologias" value="NODEJS">
+                <label for="NODEJS">NODEJS</label>
+
+                <input type="checkbox" name="SQL" id="tecnologias" value="SQL">
+                <label for="SQL">SQL</label>
+
+                <input type="checkbox">
+                <label for="">FIREBIRD</label> -->
+            </div>
+        </fieldset>
+
+        <div class="campo">
+            <br>
+            
+            <label for="experiencia"><strong>Conte um pouco da sua experiência</strong></label>
+            
+            <textarea name="experiencia" id="experiencia" rows="6" style="width: 26em"></textarea>
+        </div>
+
+        <button class="botao" type="submit" onsubmit="">Concluído</button>
+
+    </form>
+
+</body>
+
+</html>
